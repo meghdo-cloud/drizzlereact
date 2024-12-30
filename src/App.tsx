@@ -1,10 +1,10 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter basename="/drizzlereact">
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>Hello World from Drizzle React!</h1>} />
+        <Route path="/drizzlereact" element={<h1>Hello World from Drizzle React!</h1>} />
       </Routes>
     </BrowserRouter>
   );
